@@ -1,10 +1,10 @@
 require 'formula'
 
 class GoogleAuthenticator < Formula
-  url 'http://google-authenticator.googlecode.com/files/libpam-google-authenticator-1.0-source.tar.bz2'
-  sha1 '017b7d89989f1624e360abe02d6b27a6298d285d'
-  head 'https://code.google.com/p/google-authenticator/', :using => :git
-  homepage 'http://code.google.com/p/google-authenticator/'
+  url 'https://github.com/google/google-authenticator/archive/9d858ecaad46b40b004fbc1413daa4143c3f10b8.zip'
+  sha256 'a54bd7e1d1f68f0d134f2cfefbe5b8daf86e0eaf9717dc3fda0cf42cd194d479'
+  head 'https://github.com/google/google-authenticator/', :using => :git
+  homepage 'https://github.com/google/google-authenticator/'
 
   def install
     if ARGV.build_head?
